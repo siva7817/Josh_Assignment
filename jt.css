@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: rubik;
+}
+
+.hero__section {
+  width: 100%;
+  height: 100vh;
+  background-color: #1ac073;
+}
+
+.navbar {
+  margin-bottom: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .head {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__section_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  font-weight: 100;
+}
+
+.navbar__second_section_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: white;
+}
+
+.hero__section_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.left__section {
+  margin: 25px;
+  width: 50%;
+}
+
+.left__section h1 {
+  margin: 30px;
+  color: white;
+  font-size: 75px;
+  font-weight: 350;
+}
+
+.left__section p {
+  color: white;
+  font-weight: 200;
+  margin: 30px;
+  width: 50%;
+}
+
+.hero__section_search {
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  width: 50%;
+  margin: 30px;
+}
+
+.hero__section_search input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.hero__section_search input[type="text"]::placeholder {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.hero__section_search button {
+  width: 20%;
+  margin-right: 0;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  background-color: #f3ba00;
+}
