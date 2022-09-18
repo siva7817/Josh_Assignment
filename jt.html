@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -34,7 +34,7 @@
           </div>
           <div class="navbar__second_section_container">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i id="cart__modal_open_btn" class="fa-solid fa-cart-shopping"></i>
           </div>
         </nav>
       </header>
@@ -59,6 +59,15 @@
         </div>
       </div>
     </section>
+
+    <div id="cart__modal" class="cart__modal">
+      <div class="cart__modal_content">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h2>Cart is Empty</h2>
+        <p>Add some items to the cart to checkout</p>
+        <button id="close">Back to Menu</button>
+      </div>
+    </div>
 
     <section class="home__kitchen_section">
       <h1 class="kitchen_title">Home kitchen</h1>
@@ -596,8 +605,22 @@
           </div>
         </div>
       </div>
-      <button class="dish__request">Request a Dish</button>
+      <button id="dish__request">Request a Dish</button>
     </section>
+
+    <div id="dish__request_modal" class="dish__request_modal">
+      <div class="dr__modal_content">
+        <h2>Request a Dish</h2>
+        <label for="name">Name*</label>
+        <input type="text" required placeholder="Enter name of the dish" />
+        <label for="image">Upload an image</label>
+        <input type="url" required placeholder="Paste a URL" />
+        <div class="lowey">
+          <button id="dr__close">Cancel</button>
+          <button id="dr__submit">Submit Request</button>
+        </div>
+      </div>
+    </div>
 
     <section class="service__section">
       <h2 class="service_title">
@@ -659,7 +682,7 @@
           </div>
         </div>
       </footer>
-      <hr/>
+      <hr />
     </section>
     <script src="jt.js" async></script>
   </body>
